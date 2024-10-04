@@ -42,10 +42,10 @@ const ContactForm = () => {
   return (
     <ContactSection>
       <ContactTitle data-aos="fade-in">Contáctanos</ContactTitle>
-      <Form data-aos="fade-in">
-        <Input type="text" placeholder="Escribe tu nombre" required />
+      <Form id="mailer-form" data-aos="fade-in">
+        <Input name="subject" type="text" placeholder="Escribe tu nombre" required />
         <Input type="email" placeholder="E-mail" required />
-        <TextArea rows="5" placeholder="Quiero una página que..." required />
+        <TextArea name='html'  rows="5" placeholder="Quiero una página que..." required />
         <SubmitButton type="submit">Enviar correo</SubmitButton>
       </Form>
     </ContactSection>
