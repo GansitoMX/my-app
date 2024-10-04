@@ -44,7 +44,7 @@ const ContactForm = () => {
       <ContactTitle data-aos="fade-in">Contáctanos</ContactTitle>
       <Form data-aos="fade-in">
         <Input type="text" placeholder="Escribe tu nombre" required />
-        <Input type="email" placeholder="Email" required />
+        <Input type="email" placeholder="E-mail" required />
         <TextArea rows="5" placeholder="Quiero una página que..." required />
         <SubmitButton type="submit">Enviar correo</SubmitButton>
       </Form>
