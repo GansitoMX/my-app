@@ -98,7 +98,9 @@ const Header = () => {
           Somos <strong>Freelance</strong>, una agencia web digital, reflejamos el poder y la habilidad de "cortar" problemas con soluciones web elegantes.
         </HeaderSubtitle>
         <HeaderButton
-          href="#contact"
+          href="https://wa.me/5216621665771" 
+          target="_blank"
+          rel="noopener noreferrer"
           variants={buttonVariants}
           initial="hidden"
           animate="visible"

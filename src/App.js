@@ -4,7 +4,7 @@ import Header from './components/Header';
 import Content from './components/Content';
 import IconCards from './components/IconCards';
 import Servicios from './components/Servicios';
-import ContactForm from './components/ContactForm';
+
 import Footer from './components/Footer';
 import WhatsAppButton from './components/WhatsAppButton';
 import PopUp from './components/PopUp';
@@ -32,9 +32,6 @@ const App = () => {
       <IconCards />
       <div id="services">
       <Servicios />
-      </div>
-      <div id="contact">
-      <ContactForm />
       </div>
       <WhatsAppButton />
       <Footer />
