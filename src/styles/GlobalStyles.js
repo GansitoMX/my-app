@@ -21,12 +21,12 @@ const GlobalStyles = createGlobalStyle`
 
   p {
     margin-bottom: 1rem;
+    font-family: consolas;
   }
 
   a {
     text-decoration: none;
     color: #007bff;
-    scroll-behavior: smooth;
   }
 
   button {

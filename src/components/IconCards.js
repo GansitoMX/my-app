@@ -6,10 +6,10 @@ const IconCardSection = styled.div`
   animation: gradientBackground 8s ease infinite;
   height: 60vh;
   margin: 0;
-  display: flex; /* Flexbox para colocar en fila */
-  justify-content: center; /* Centra las cards horizontalmente */
-  align-items: center; /* Centra las cards verticalmente */
-  gap: 1rem; /* Espacio entre las cards */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
 
   @keyframes gradientBackground {
     0% {
@@ -22,6 +22,12 @@ const IconCardSection = styled.div`
       background-position: 0% 50%;
     }
   }
+
+  @media (max-width: 768px) {
+    flex-direction: column; /* Apilar las tarjetas en pantallas pequeñas */
+    height: auto; /* Ajustar la altura */
+    padding: 2rem 0; /* Agregar algo de padding vertical */
+  }
 `;
 
 const Card = styled.div`
@@ -32,8 +38,13 @@ const Card = styled.div`
   padding: 20px;
   text-align: center;
   transition: transform 0.3s;
+
   &:hover {
     transform: translateY(-7px);
+  }
+
+  @media (max-width: 768px) {
+    width: 90%; /* Ajustar el ancho de la tarjeta en pantallas pequeñas */
   }
 `;
 
@@ -41,11 +52,20 @@ const Icon = styled.div`
   font-size: 3rem;
   color: #007bff;
   margin-bottom: 10px;
+
+  @media (max-width: 768px) {
+    font-size: 2.5rem; /* Reducir el tamaño del ícono en pantallas pequeñas */
+  }
 `;
 
 const CardText = styled.p`
   font-size: 1rem;
   color: #333333;
+
+  @media (max-width: 768px) {
+    font-size: 0.9rem; /* Reducir ligeramente el tamaño del texto */
+    font-family: consolas;
+  }
 `;
 
 const Icons = () => {
@@ -53,26 +73,36 @@ const Icons = () => {
     <IconCardSection>
       <Card>
         <Icon>⏰</Icon>
-        <CardText><strong>24/7.</strong> Tu negocio está disponible todo el día para clientes potenciales.</CardText>
+        <CardText>
+          <strong>24/7.</strong> Tu negocio está disponible todo el día para
+          clientes potenciales.
+        </CardText>
       </Card>
 
       <Card>
         <Icon>📜</Icon>
-        <CardText><strong>Credibilidad.</strong> Una web profesional aumenta la confianza en tu marca.</CardText>
+        <CardText>
+          <strong>Credibilidad.</strong> Una página web profesional aumenta la confianza en
+          tu marca.
+        </CardText>
       </Card>
 
       <Card>
         <Icon>🌎</Icon>
-        <CardText><strong>Globalizado.</strong> Puedes llegar a clientes de cualquier parte del mundo.</CardText>
+        <CardText>
+          <strong>Globalizado.</strong> Puedes llegar a clientes de cualquier parte
+          del mundo.
+        </CardText>
       </Card>
+
       <Card>
         <Icon>💎</Icon>
-        <CardText><strong>Diferencia.</strong> Una carta de presentación profesional que te resalta de los demás.</CardText>
+        <CardText>
+          <strong>Diferencia.</strong> Una carta de presentación profesional que te
+          resalta de los demás.
+        </CardText>
       </Card>
     </IconCardSection>
-
-
-
   );
 };
 
