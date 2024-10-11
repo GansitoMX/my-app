@@ -15,7 +15,7 @@ const PackageCard = styled.div`
   background-color: ${({ highlighted }) => (highlighted ? '#fff9ef' : '#fff')}; /* Fondo claro para la destacada */
   border: ${({ highlighted }) => (highlighted ? '3px solid #ff9800' : '1px solid #ddd')}; /* Border destacado */
   border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
   padding: 2rem;
   width: 400px;
   transition: transform 0.3s;
@@ -51,6 +51,7 @@ const H2 = styled.h2`
 
 const Servicios = () => {
   return (
+    
     <ServicesContent>
       {/* Primera Tarjeta (no destacada) */}
       <PackageCard data-aos="fade-right">

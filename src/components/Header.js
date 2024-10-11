@@ -82,7 +82,7 @@ const Header = () => {
   return (
     <HeaderContainer>
       <HeaderContent>
-        <HeaderTitle data-aos="fade-up">
+        <HeaderTitle data-aos="fade-right">
           DemonCode
         </HeaderTitle>
         <HeaderSubtitle data-aos="fade-down">
