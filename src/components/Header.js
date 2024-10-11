@@ -1,6 +1,5 @@
 import React from 'react';
 import styled from 'styled-components';
-import { motion } from 'framer-motion'; // Import framer-motion for animations
 import headerImage from '../assets/Designer-header.jpeg';
 
 // Styled Components
@@ -34,18 +33,18 @@ const Image = styled.img`
   height: auto;
 `;
 
-const HeaderTitle = styled(motion.h1)`  // Use motion for animation
+const HeaderTitle = styled.h1`  // Use motion for animation
   font-size: 5rem;
   margin-bottom: 1rem;
 `;
 
-const HeaderSubtitle = styled(motion.p)`  // Use motion for animation
+const HeaderSubtitle = styled.p`  // Use motion for animation
   font-size: 1.5rem;
   margin-bottom: 2rem;
   font-family: Consolas, sans-serif;
 `;
 
-const HeaderButton = styled(motion.a)`  // Use motion for animation
+const HeaderButton = styled.a`  // Use motion for animation
   padding: 10px 20px;
   font-size: 1.2rem;
   background-color: #ff9800;
@@ -63,7 +62,7 @@ const HeaderButton = styled(motion.a)`  // Use motion for animation
 
 
 // Animation Variants
-const titleVariants = {
+/* const titleVariants = {
   hidden: { opacity: 0, y: -50 },
   visible: { opacity: 1, y: 0, transition: { duration: 1 } }
 };
@@ -76,41 +75,30 @@ const subtitleVariants = {
 const buttonVariants = {
   hidden: { opacity: 0, scale: 0.8 },
   visible: { opacity: 1, scale: 1, transition: { delay: 1, duration: 0.8 } }
-};
+}; */
 
 // Component with animations
 const Header = () => {
   return (
     <HeaderContainer>
       <HeaderContent>
-        <HeaderTitle
-          variants={titleVariants}
-          initial="hidden"
-          animate="visible"
-        >
+        <HeaderTitle data-aos="fade-up">
           DemonCode
         </HeaderTitle>
-        <HeaderSubtitle
-          variants={subtitleVariants} 
-          initial="hidden"
-          animate="visible"
-        >
+        <HeaderSubtitle data-aos="fade-down">
           Somos <strong>Freelance</strong>, una agencia de desarrollo y diseño web, tenemos el poder y la habilidad de "cortar" problemas con soluciones web elegantes.
         </HeaderSubtitle>
         <HeaderButton
           href="https://wa.me/5216621665771" 
           target="_blank"
           rel="noopener noreferrer"
-          variants={buttonVariants}
-          initial="hidden"
-          animate="visible"
         >
           Comenzar
         </HeaderButton>
       </HeaderContent>
 
-      <HeaderImage>
-        <Image src={headerImage} alt="Imagen de ejemplo" />
+      <HeaderImage data-aos="fade-up">
+        <Image  src={headerImage} alt="Imagen de ejemplo" />
       </HeaderImage>
     </HeaderContainer>
   );
