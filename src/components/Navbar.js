@@ -1,10 +1,17 @@
 import React from 'react';
 import styled from 'styled-components';
+import Logo from '../assets/logo1.png';
+
+
+
+const ImageLogo = styled.img`
+  width: 15%;  
+`;
 
 // Styled components para la Navbar
 const NavbarContainer = styled.nav`
   display: flex;
-  justify-content: flex-end;
+  justify-content: flex-start;
   align-items: center;
   height: 60px;
   background-color: #ff9800;
@@ -31,9 +38,12 @@ const NavLink = styled.a`
 const Navbar = () => {
   return (
     <NavbarContainer>
+      <ImageLogo src={Logo}></ImageLogo>    
       <NavLink href="#services">Precios</NavLink>
       <NavLink href="#contact">Contacto</NavLink>
+      
     </NavbarContainer>
+    
   );
 };
 
