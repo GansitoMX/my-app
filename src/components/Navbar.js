@@ -5,7 +5,7 @@ import Logo from '../assets/logo1.png';
 
 
 const ImageLogo = styled.img`
-  width: 15%;  
+  width: 10%;  
 `;
 
 // Styled components para la Navbar
