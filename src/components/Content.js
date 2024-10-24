@@ -60,7 +60,7 @@ const Content = () => {
     <ContentSection>
       <ContentTitle data-aos="fade-up">¿Qué hacemos?</ContentTitle>
       <ContentText data-aos="fade-up">
-        En <strong>DemonCode Studios</strong>, nos especializamos en crear páginas web <strong>a la medida</strong> para pequeños negocios y emprendedores. Ofrecemos un servicio personalizado que refleja con precisión la visión de nuestros clientes, asegurando que cada proyecto sea único y de la más alta calidad para impulsar su presencia digital.
+        En <strong>demonCode Studios</strong>, nos especializamos en crear páginas web y edición de videos <strong>a la medida</strong> para pequeños negocios y emprendedores. Ofrecemos un servicio personalizado que refleja con precisión la visión de nuestros clientes, asegurando que cada proyecto sea único y de la más alta calidad para impulsar su presencia digital.
       </ContentText>
 
       <ContentTitle2 data-aos="fade-up">Servicios</ContentTitle2>

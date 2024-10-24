@@ -78,7 +78,7 @@ const Header = () => {
           demonCode
         </HeaderTitle>
         <HeaderSubtitle data-aos="fade-down">
-          Somos <strong>Freelance</strong>, una agencia de desarrollo y diseño web, tenemos el poder y la habilidad de "cortar" problemas con soluciones web elegantes.
+          Somos <strong>Freelance</strong>, desarrollo, diseño web y edición de videos, tenemos el poder de "cortar" problemas con soluciones elegantes.
         </HeaderSubtitle>
         <HeaderButton
           href="https://wa.me/5216621665771" 
