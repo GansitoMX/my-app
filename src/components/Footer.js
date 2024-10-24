@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import { FaFacebookF, FaPhoneAlt } from 'react-icons/fa';
 
 const FooterContainer = styled.footer`
-  padding: 2rem 3rem; /* Tamaño más grande */
+  padding: 2rem 3rem;
   background-color: #0056b3;
   color: white;
   text-align: left;
@@ -11,9 +11,9 @@ const FooterContainer = styled.footer`
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  
+
   @media (max-width: 768px) {
-    align-items: center; /* Centrar en pantallas más pequeñas */
+    align-items: center;
     text-align: center;
   }
 `;
@@ -34,6 +34,11 @@ const FooterText = styled.p`
 const SocialLink = styled.a`
   color: white;
   font-size: 1.5rem;
+  transition: color 0.3s;
+
+  &:hover {
+    color: #f3f3f3;
+  }
 `;
 
 const PhoneNumber = styled.div`
@@ -44,11 +49,24 @@ const PhoneNumber = styled.div`
 `;
 
 const IconWrapper = styled.div`
-  display: inline-block;
-  padding: 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;  /* Tamaño fijo */
+  height: 40px; /* Tamaño fijo */
   background-color: white;
-  border-radius: 35%;
+  border-radius: 50%;  /* Forma redonda */
   color: #0056b3;
+  transition: transform 0.3s;
+
+  &:hover {
+    transform: scale(1.1);
+  }
+
+  svg {
+    width: 18px;  /* Tamaño específico para el logo */
+    height: 18px;
+  }
 `;
 
 const Footer = () => {
@@ -61,7 +79,7 @@ const Footer = () => {
       <FooterRow>
         <PhoneNumber>
           <FaPhoneAlt />
-          <FooterText>+52 662-123-4567</FooterText> {/* Cambia por tu número */}
+          <FooterText>+52 662-123-4567</FooterText>
         </PhoneNumber>
       </FooterRow>
 
@@ -82,4 +100,3 @@ const Footer = () => {
 };
 
 export default Footer;
-
