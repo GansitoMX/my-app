@@ -79,12 +79,12 @@ const Footer = () => {
       <FooterRow>
         <PhoneNumber>
           <FaPhoneAlt />
-          <FooterText>+52 662-123-4567</FooterText>
+          <FooterText>+52 662-166-5771</FooterText>
         </PhoneNumber>
       </FooterRow>
 
       <FooterRow>
-        <SocialLink href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">
+        <SocialLink href="https://www.facebook.com/demonCodeStudios" target="_blank" rel="noopener noreferrer">
           <IconWrapper>
             <FaFacebookF />
           </IconWrapper>

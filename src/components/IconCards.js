@@ -4,12 +4,13 @@ import styled from "styled-components";
 const IconCardSection = styled.div`
   background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
   animation: gradientBackground 8s ease infinite;
-  height: 60vh;
+  min-height: 60vh;
   margin: 0;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 1rem;
+  padding: 2rem;
 
   @keyframes gradientBackground {
     0% {
@@ -24,9 +25,14 @@ const IconCardSection = styled.div`
   }
 
   @media (max-width: 768px) {
-    flex-direction: column; /* Apilar las tarjetas en pantallas pequeñas */
-    height: auto; /* Ajustar la altura */
-    padding: 2rem 0; /* Agregar algo de padding vertical */
+    flex-direction: column;
+    height: auto;
+    padding: 1rem;
+  }
+
+  @media (max-width: 1024px) {
+    gap: 0.5rem;
+    padding: 1.5rem;
   }
 `;
 
@@ -35,6 +41,7 @@ const Card = styled.div`
   border-radius: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   width: 250px;
+  min-height: 150px; /* Mantener la altura mínima de las tarjetas */
   padding: 20px;
   text-align: center;
   transition: transform 0.3s;
@@ -44,7 +51,8 @@ const Card = styled.div`
   }
 
   @media (max-width: 768px) {
-    width: 90%; /* Ajustar el ancho de la tarjeta en pantallas pequeñas */
+    width: 90%;
+    margin-bottom: 1rem; /* Espacio entre tarjetas en pantallas pequeñas */
   }
 `;
 
@@ -54,7 +62,7 @@ const Icon = styled.div`
   margin-bottom: 10px;
 
   @media (max-width: 768px) {
-    font-size: 2.5rem; /* Reducir el tamaño del ícono en pantallas pequeñas */
+    font-size: 2.5rem;
   }
 `;
 
@@ -63,8 +71,8 @@ const CardText = styled.p`
   color: #333333;
 
   @media (max-width: 768px) {
-    font-size: 0.9rem; /* Reducir ligeramente el tamaño del texto */
-    font-family: consolas;
+    font-size: 0.9rem;
+    font-family: Consolas;
   }
 `;
 
@@ -107,3 +115,4 @@ const Icons = () => {
 };
 
 export default Icons;
+
