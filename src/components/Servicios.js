@@ -13,7 +13,7 @@ const ServicesContent = styled.div`
 // Estilos para las tarjetas
 const PackageCard = styled.div`
   background-color: ${({ highlighted }) => (highlighted ? '#fff9ef' : '#fff')}; /* Fondo claro para la destacada */
-  border: ${({ highlighted }) => (highlighted ? '3px solid #ff9800' : '1px solid #ddd')}; /* Border destacado */
+  border: ${({ highlighted }) => (highlighted ? '3px solid #c82070' : '1px solid #c82070')}; /* Border destacado */
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
   padding: 2rem;
@@ -42,7 +42,7 @@ const PackageCard = styled.div`
 `;
 
 const H2 = styled.h2`
-    background-color: #f09433;
+    background-color: #c82070;
     padding: 1rem;
     border-radius: 6px;
     color: white;
@@ -68,7 +68,7 @@ const Servicios = () => {
 
       {/* Segunda Tarjeta (destacada en color naranja) */}
       <PackageCard highlighted data-aos="fade-left">
-        <H2>RECOMENDADO Paquete Emprendedor</H2>
+        <H2>RECOMENDADO Emprendedor</H2>
         <p><strong>1 Sitio web</strong> .com, .com.mx, .mx, etc...</p>
         <p><strong>Rendimiento mejorado</strong> Tiempos de carga optimizados.</p>
         <p><strong>25 GB de almacenamiento de SSD</strong> Guarda más contenido.</p>

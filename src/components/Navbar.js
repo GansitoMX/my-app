@@ -14,7 +14,7 @@ const NavbarContainer = styled.nav`
   justify-content: flex-start;
   align-items: center;
   height: 60px;
-  background-color: #ff9800;
+  background-color: #c82070;
   position: fixed;
   width: 100%;
   top: 0;

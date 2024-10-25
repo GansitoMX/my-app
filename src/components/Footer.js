@@ -4,7 +4,7 @@ import { FaFacebookF, FaPhoneAlt } from 'react-icons/fa';
 
 const FooterContainer = styled.footer`
   padding: 2rem 3rem;
-  background-color: #0056b3;
+  background-color: #c82070;
   color: white;
   text-align: left;
   display: flex;
@@ -73,7 +73,7 @@ const Footer = () => {
   return (
     <FooterContainer>
       <FooterRow>
-        <FooterText>Col. Centenario, Hermosillo Sonora. México. CP 83260</FooterText>
+        <FooterText>Col. Solidaridad, Hermosillo Sonora. México. CP 83116</FooterText>
       </FooterRow>
 
       <FooterRow>
