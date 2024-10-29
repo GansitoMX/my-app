@@ -5,7 +5,8 @@ import Logo from '../assets/logo1.png';
 
 
 const ImageLogo = styled.img`
-  width: 10%;  
+  width: 10%;
+
 `;
 
 // Styled components para la Navbar
@@ -38,9 +39,13 @@ const NavLink = styled.a`
 const Navbar = () => {
   return (
     <NavbarContainer>
-      <ImageLogo src={Logo}></ImageLogo>    
+      <ImageLogo src={Logo} href="#"></ImageLogo>  
       <NavLink href="#services">Precios</NavLink>
-      <NavLink href="#contact">Contacto</NavLink>
+      <NavLink
+      href="https://wa.me/5216621665771" 
+      target="_blank"
+      rel="noopener noreferrer"
+      >Contacto</NavLink>
       
     </NavbarContainer>
     
